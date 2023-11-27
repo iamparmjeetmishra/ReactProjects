@@ -1,6 +1,6 @@
 import { arrowRight } from "../assets/icons";
 import { bigShoe1 } from "../assets/images";
-import { Button } from "../components";
+import { Button, ShoeCard } from "../components";
 import { shoes, statistics } from "../constants";
 
 
@@ -42,11 +42,14 @@ const Hero = () => {
       </div>
       <div className="">
         {shoes.map((shoe) => (
-          <img
-            key={shoe.iconURL}
-            src={shoe.iconURL}
-          />
-        ))}
+          <div key={shoe}>
+            <ShoeCard
+              imgURL={shoe}
+              changeBigShoeImage={() => { }}
+              bigShoeImg=""
+            />
+          </div>
+        ) )}
       </div>
     </section>
   )
