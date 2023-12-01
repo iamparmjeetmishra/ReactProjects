@@ -2,15 +2,16 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [todos, setTodos] = useState('John')
+  const [todos, setTodos] = useState([])
+  const [tasks, setTasks] = useState('')
 
   const changeHandler = (e) => {
     // e.preventDefault();
-    setTodos(e.value)
+    setTasks(e.target.value)
   }
 
   const addTodo = () => {
-    console.log('add')
+   setTodos([...todos, tasks])
   }
 
   return (
@@ -19,11 +20,11 @@ function App() {
       <input type='text' onChange={changeHandler} placeholder='add your todo' />
       <button onClick={addTodo}>Add</button>
       <ul>
-        <li>{todos}</li>
-        {/* { todos.map((todo, index) => (
+        
+        { todos.map((todo, index) => (
           <li key={index}>{ todo }</li>
          ))
-        } */}
+        }
       </ul>
     </>
   )
