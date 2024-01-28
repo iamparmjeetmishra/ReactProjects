@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { initialItems } from "../../components/utils/utils";
+import { initialItems } from "../../utils/utils";
 
 interface DemoProps {}
 

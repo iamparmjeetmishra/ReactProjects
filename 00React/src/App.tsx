@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { UseCallbackHook } from './hooks'
+import { UseCallbackHook } from './components/hooks/index.js'
 
 
 function App() {
