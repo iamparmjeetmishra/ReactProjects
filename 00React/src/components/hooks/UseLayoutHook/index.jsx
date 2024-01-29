@@ -1,4 +1,5 @@
-import { useState, useRef,useEffect, useLayoutEffect } from "react";
+'use client'
+import { useState, useRef, useEffect, useLayoutEffect } from "react";
 
 export default function App() {
     const [show, setShow] = useState(false)
