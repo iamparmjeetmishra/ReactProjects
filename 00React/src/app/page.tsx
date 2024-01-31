@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { UseEffectHook} from '../components/hooks'
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="flex gap-2 justify-center h-screen">
         <Link href='/hooks' >Hooks</Link>
         <Link href='/sfunctions' >Small Functions</Link>
+        <UseEffectHook />
       </div>
     </section>
   );

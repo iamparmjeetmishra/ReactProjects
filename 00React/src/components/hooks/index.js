@@ -1,8 +1,8 @@
-import UseCallbackHook from './UseCallbackHook'
-import UseLayoutHook from './UseLayoutHook'
-import UseMemoHook from './UseMemoHook'
-import UseEffectHook from './UseEffectHook'
-import UseRefHook from './UseRefHook'
+import UseCallbackHook from './UseCallbackHook/UseCallbackHook'
+import UseLayoutHook from './UseLayoutHook/UseLayoutHook'
+import UseMemoHook from './UseMemoHook/UseMemoHook'
+import UseEffectHook from './UseEffectHook/UseEffectHooks'
+import UseRefHook from './UseRefHook/UseRefHook'
 
 export {
     UseCallbackHook,
